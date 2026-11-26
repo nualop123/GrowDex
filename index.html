@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Linua">
+<meta name="description" content="GrowDex: every Growtopia recipe in one place - splicing, combining, cooking, crystals, sewing, forging, DNA and more.">
+<title>GrowDex</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mitr:wght@500;600&family=IBM+Plex+Sans+Thai:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="in">
+    <div class="bar">
+      <div class="ttl"><h1>GrowDex</h1><span class="cr">Growtopia recipes · by Linua</span></div>
+      <button class="round" id="theme" type="button"><span id="themeI"></span></button>
+      <button class="lang" id="lang" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5c3 3.2 3 15.8 0 19M12 2.5c-3 3.2-3 15.8 0 19"/></svg>
+        <span id="langT"></span>
+      </button>
+    </div>
+    <nav class="sysbar" id="sysbar" aria-label="Systems"></nav>
+    <div class="mach"><div class="panel">
+      <div class="row" id="machine"></div>
+      <div class="stat">
+        <p class="status" id="status" aria-live="polite"></p>
+        <button class="ico" id="swap" type="button" data-ia="swap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h15l-4-4M20 16H5l4 4"/></svg></button>
+      </div>
+      <div class="srch">
+        <div class="field"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input type="search" id="q" autocomplete="off" enterkeyhint="search"></div>
+        <button class="ico alt" id="back" type="button" data-ia="back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 14L4 9l5-5"/><path d="M4 9h10a6 6 0 010 12h-3"/></svg></button>
+        <button class="ico alt" id="clear" type="button" data-ia="clear"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      </div>
+      <div class="tabs" id="tabs" role="tablist"></div>
+    </div></div>
+  </div>
+</header>
+<main id="main"></main>
+<footer id="foot"></footer>
+
+<script src="js/data.js"></script>
+<script src="js/items.js" onerror="this.remove()"></script>
+<!-- Optional: js/icons.js is made by tools/make_icons.py for personal use and is not in the repo -->
+<script src="js/icons.js" onerror="this.remove()"></script>
+<script src="js/i18n.js"></script>
+<script src="js/seeds.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
